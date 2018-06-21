@@ -1,0 +1,12 @@
+<div class="container">
+  <%= render 'header' %>
+
+  <h2>ブログ詳細画面</h2>
+  <p>内容:<%= @blog.content %></p>
+
+  <br>
+
+  <%= link_to "ブログ一覧画面にもどる", tweets_blogs_path %>
+
+  <%= render 'footer' %>
+</div>

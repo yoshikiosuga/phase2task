@@ -1,0 +1,26 @@
+<div class="container">
+  <%= render 'header' %>
+
+  <h2>以下の内容で投稿しますか？</h2>
+  <div class="confirm_content">
+    <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
+      <%= form.hidden_field :title %>
+      <%= form.hidden_field :content %>
+
+      <p>本文:<%= @blog.content %></p>
+      <div class="confirm_btn_area">
+        <%= form.submit "投稿する", class: "btn" %>
+      </div>
+    <% end %>
+
+    <%= form_with(model: @blog, url: new_blog_path, local: true, method: 'get') do |form| %>
+      <%= form.hidden_field :title %>
+      <%= form.hidden_field :content %>
+      <div class="confirm_btn_area">
+        <%= form.submit "もどる", name: 'back', class: "btn" %>
+      </div>
+    <% end %>
+  </div>
+
+  <%= render 'footer' %>
+</div>

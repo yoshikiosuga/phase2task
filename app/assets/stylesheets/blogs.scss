@@ -1,0 +1,167 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  font-size: 62.5%;
+  height:100%;
+}
+
+body {
+  height:100%;
+  background-color: #F1F1F1;
+
+  h1 {
+    color: #22008D;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 32px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.btn {
+    font-size: 2rem;
+}
+
+p {
+    color: darkblue;
+}
+
+.container {
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+
+  .content{
+    padding-bottom: 100px;
+  }
+
+  .header {
+    background-color: #3BBDFF;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  ul {
+    /* 余白を削除 */
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    /* リスト先頭の黒丸を削除 */
+    list-style: none;
+  }
+
+  .top_menu {
+    li {
+      float: left;
+      width: auto;
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 30px;
+      }
+    }
+  }
+
+  .notice {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .index_table{
+
+    table{
+      margin: 0 auto;
+    }
+
+    .table_content{
+      font-size: 2.5rem;
+    }
+
+    .table_bottom{
+      td {
+        height: 50px;
+        width: 100px;
+      }
+
+      .btn {
+        border: 1px solid #000000;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .btn_edit {
+        border-radius: 5px;
+        background-color: #18ffd1;
+      }
+
+      .btn_delete {
+        border-radius: 5px;
+        background-color: #ff5757;
+      }
+    }
+  }
+
+  .input_content{
+    margin-top: 30px;
+    text-align: center;
+
+    .tweet_title{
+      padding: 20px;
+      font-size: 2.5rem;
+
+      .tweet_title_text{
+        border-radius: 10px;
+        box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,0.5);
+        border: aliceblue;
+      }
+    }
+  }
+
+  .confirm_content {
+    text-align: center;
+
+    p {
+      font-size: 2.5rem;
+    }
+
+    .confirm_btn_area{
+      margin-top: 10px;
+    }
+  }
+
+  .footer{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    background-color: #3BBDFF;
+    display: table;
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+    }
+  }
+}
